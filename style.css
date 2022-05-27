@@ -165,7 +165,7 @@ main {
     grid-column: 2/6;
     grid-row: 2/5;
     
-    /* font-size: 30px; */
+     font-size: 30px;  
     font-weight: lighter;
     align-self: center;
     justify-self: start;
