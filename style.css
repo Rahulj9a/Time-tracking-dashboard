@@ -211,7 +211,7 @@ main {
 footer{
     display:block;
     position:relative;
-    margin-top:90vh;
+    margin-top:96vh;
 
 }
 
@@ -226,7 +226,7 @@ footer{
         font-size: 30px;
     }
     footer{
-        margin-top:90vh;
+        margin-top:95vh;
     }
 }
 
