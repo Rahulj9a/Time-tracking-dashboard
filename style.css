@@ -1,0 +1,327 @@
+.attribution { font-size: 11px; text-align: center; color:white; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+body {
+    background-color: hsl(226, 43%, 10%);
+}
+
+main {
+    background: transparent;
+    display: block;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    height: 400px;
+    width: 800px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+
+    padding: 10px;
+}
+
+#dashboard {
+
+    background-color: hsl(235, 46%, 20%);
+    grid-column: 1/2;
+    border-radius: 10px;
+    display: solid;
+}
+
+.detailBoxes {
+    position: relative;
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+
+}
+
+.Boxes {
+    position: relative;
+    display: block;
+    border-radius: 10px;
+}
+
+#personalDetails {
+    width: 100%;
+    height: 70%;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+}
+
+#changePara {
+    width: 100%;
+    height: 30%;
+
+
+}
+
+#perGroup {
+    list-style: none;
+}
+
+.linkPara {
+    color: white;
+    margin-bottom: 15px;
+    margin-left: -20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+
+}
+
+.linkPara:hover {
+    color: rgb(246, 250, 14);
+    transform: translateY(-1px);
+
+}
+
+#workBox {
+    background-color: hsl(15, 100%, 70%);
+
+
+}
+
+#playBox {
+    background-color: hsl(195, 74%, 62%);
+
+
+}
+
+#studyBox {
+    background-color: hsl(348, 100%, 68%);
+
+
+}
+
+#exerciseBox {
+    background-color: hsl(145, 58%, 55%);
+
+
+}
+
+#socialBox {
+    background-color: hsl(264, 64%, 52%);
+
+
+}
+
+#selfCareBox {
+    background-color: hsl(43, 84%, 65%);
+}
+
+.boxImages {
+    width: 60px;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.contentBox {
+    background-color: hsl(235, 46%, 20%);
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    color: white;
+    bottom: 0;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+}
+
+.contentTitle {
+    font-size: 18px;
+    grid-column: 2/5;
+    align-self: center;
+    justify-self: start;
+
+}
+
+.dot {
+    grid-column: 5/7;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+}
+.dot:hover{
+    color:rgb(246, 250, 14);
+}
+
+.time {
+    grid-column: 2/6;
+    grid-row: 2/5;
+    
+    /* font-size: 30px; */
+    font-weight: lighter;
+    align-self: center;
+    justify-self: start;
+}
+
+
+.lastTimeBox {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    grid-column:2/6;
+    grid-row:5/6;
+    font-size: 11px;
+    font-weight: lighter;
+    color: hsl(236, 100%, 87%);
+    margin-bottom: 30px;
+
+}
+
+.personalImage {
+    grid-row: 2/5;
+    grid-column: 2/6;
+    width: 80px;
+    align-self: auto;
+    justify-self: start;
+    border: 2.5px white solid;
+    border-radius: 50%;
+}
+
+.details {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-column: 2/6;
+    grid-row: 6/10;
+    color: white;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.personalName {
+    font-size: 40px;
+    font-weight: lighter;
+}
+footer{
+    display:block;
+    position:relative;
+   margin-top:560px
+
+}
+
+@media (max-width:900px) {
+    .container {
+        height: 200px;
+        width: 600px;
+        margin-bottom: 300px;
+    }
+
+    .personalName {
+        font-size: 30px;
+    }
+    footer{
+        margin-top:510px;
+    }
+}
+
+@media (max-width:550px) {
+    main{
+        width:100%;
+    }
+    .container {
+        height: fit-content;
+        width:90%;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 170px repeat(6, 150px);
+        margin-top: 10px;
+    }
+
+    .dashboard {
+        margin-top: 30px;
+        height: 100px;
+         
+        grid-row: auto;
+        grid-column: auto;
+        display: flex;
+
+    }
+    .personalImage{
+        width: 70px;
+        height:70px;
+        align-self: center;
+    }
+    #personalDetails{
+        display: flex;
+        justify-content: space-around;
+    }
+    .details{
+        align-self: center;
+    }
+    .detailBoxes{
+        grid-column:auto;
+        grid-row:2/7;
+        grid-template-columns: none;
+        grid-template-rows:repeat(6,1fr);
+
+    }
+    #perGroup{
+        display: flex;
+        justify-content: space-around;
+    }
+    .time{
+        grid-column:1/2;
+         margin-left:20px;
+        grid-row: 2/3;
+        transform:translateY(-40px);
+         
+         font-size: 30px;
+    }
+    .lastTimeBox{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        justify-self: end;
+        margin-right: 20px;
+         
+        transform:translateY(-20px);
+    }
+    .contentBox{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .contentTitle{
+        grid-row:auto;
+        grid-column: 1/2;
+        margin-left: 20px;
+    }
+    .dot{
+        grid-column:2/3;
+        grid-row:auto;
+        justify-self: end; 
+        margin-right:20px;
+
+    }
+    .linkPara{
+         margin-left:-40px;
+          
+         
+    }
+    footer{
+        margin-top: 1000px;
+        
+     
+    }
+    
+
+
+
+
+
+     
+}
